@@ -1,41 +1,74 @@
+/*body {*/
+/*    display: grid;*/
+/*    grid-template-rows: 50% 50%;*/
+/*    grid-template-columns: 1fr 1fr;*/
+/*    font-family: "Lucida Console", Monaco, monospace;*/
+/*    font-size: 12px;*/
+/*    grid-gap: 4px;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    height: 100vh;*/
+/*    width: 100vw;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
 body {
     background: lightslategray;
 }
 
-.bullet {
-    /*background: black;*/
-    /*width: 300px;*/
-    /*margin: 20px auto;*/
-    /*height: 300px;*/
-    /*display: flex;*/
-    /* flex-direction: row | column | row-reverse | column-reverse */
-    flex-direction: column;
-    /* justify-content: flex-start | flex-end | center | space-around | space-between */
-    justify-content: space-around;
-    /* align-items: flex-start | flex-end | center | stretch | baseline */
-    align-items: flex-start;
-    /* flex-wrap: nowrap | wrap | wrap-reverse */
-    flex-wrap: nowrap;
-    height: 90vh;
+.container {
+    background: black;
+    width: 300px;
+    margin: 20px auto;
+    height: 300px;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-rows: 145px 145px;
+    grid-template-columns: 1fr 1fr;
 }
 
-/*.AboutMe {*/
-/*    grid-row: 1;*/
-/*    grid-column: 1;*/
-/*    background: #f3f3f3;*/
-/*}*/
-/*.Work {*/
-/*    grid-row: 2;*/
-/*    grid-column: 1;*/
-/*    background: #f3f3f3;*/
-/*}*/
-/*.Contact {*/
-/*    grid-row: 3;*/
-/*    grid-column: 1;*/
-/*    background: #f3f3f3;*/
-/*}*/
-/*.Canvas {*/
-/*    grid-row: 1 / span 2;*/
-/*    grid-column: 2 / span 3;*/
-/*    background: blue;*/
-/*}*/
+.self {
+    grid-row: 1;
+    grid-column: 1;
+    background: #990012;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 30px;
+}
+
+.aboutMe {
+    grid-row: 1;
+    grid-column: 2;
+    background: #990012;
+    color: #FFFFFF;
+    padding: 5px;
+    text-align: center;
+    line-height: 30px;
+}
+.featuredWork {
+    grid-row: 2;
+    grid-column: 1;
+    background: #990012;
+    color: #FFFFFF;
+    padding: 5px;
+    text-align: center;
+    line-height: 30px;
+}
+.reachOut {
+    grid-row: 2;
+    grid-column: 2;
+    background: #990012;
+    color: #FFFFFF;
+    padding: 5px;
+    text-align: center;
+    line-height: 30px;
+    /*border-radius: 10px;*/
+    /*margin: 5px;*/
+    /*text-align: center;*/
+    /*line-height: 100px;*/
+}
+
+footer {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+}
