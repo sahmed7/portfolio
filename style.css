@@ -20,7 +20,7 @@ body {
     background: black;
     width: 300px;
     margin: 20px auto;
-    height: 300px;
+    height: 295px;
     display: grid;
     grid-gap: 3px;
     grid-template-rows: 145px 145px;
@@ -33,10 +33,78 @@ body {
     background-image: url("Me.jpeg");
     max-width:100%;
     max-height:100%;
+    padding: 5px;
     color: #FFFFFF;
     text-align: center;
     line-height: 30px;
 }
+
+.aboutMe {
+    grid-row: 1;
+    grid-column: 2;
+    background: #990012;
+    color: #FFFFFF;
+    padding: 5px;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid #990012;
+    -webkit-transition:0.5s;
+}
+.aboutMe:hover {
+    border: 2px solid rgba(243,250,249,0);
+    color: #FFF;
+}
+.aboutMe::before, .box::after {
+    width: 100%;
+    height:100%;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    -webkit-transform: scale(0);
+    transition: 0.5s;
+}
+.aboutMe::before {
+    border-bottom: 3px solid #990012;
+    border-left: 3px solid #990012;
+    -webkit-transform-origin: 0 100%;
+}
+
+.aboutMe::after {
+    border-top: 3px solid #f3faf9;
+    border-right: 3px solid #f3faf9;
+    -webkit-transform-origin: 100% 0%;
+}
+
+.featuredWork {
+    grid-row: 2;
+    grid-column: 1;
+    background: #990012;
+    color: #FFFFFF;
+    padding: 5px;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid #f3faf9;
+    -webkit-transition:0.5s;
+}
+.reachOut {
+    grid-row: 2;
+    grid-column: 2;
+    background: #990012;
+    color: #FFFFFF;
+    padding: 5px;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid #f3faf9;
+    -webkit-transition:0.5s;
+    /*border-radius: 10px;*/
+    /*margin: 5px;*/
+    /*text-align: center;*/
+    /*line-height: 100px;*/
+}
+
 .flexWork {
     min-height: 100vh;
     margin: 0 auto;
@@ -65,37 +133,4 @@ body {
     padding: 5px;
     font-size: 12px;
     /*text-align: center;*/
-}
-
-
-.aboutMe {
-    grid-row: 1;
-    grid-column: 2;
-    background: #990012;
-    color: #FFFFFF;
-    padding: 5px;
-    text-align: center;
-    line-height: 30px;
-}
-.featuredWork {
-    grid-row: 2;
-    grid-column: 1;
-    background: #990012;
-    color: #FFFFFF;
-    padding: 5px;
-    text-align: center;
-    line-height: 30px;
-}
-.reachOut {
-    grid-row: 2;
-    grid-column: 2;
-    background: #990012;
-    color: #FFFFFF;
-    padding: 5px;
-    text-align: center;
-    line-height: 30px;
-    /*border-radius: 10px;*/
-    /*margin: 5px;*/
-    /*text-align: center;*/
-    /*line-height: 100px;*/
 }
