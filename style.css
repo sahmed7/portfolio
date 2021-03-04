@@ -30,11 +30,43 @@ body {
 .self {
     grid-row: 1;
     grid-column: 1;
-    background: #990012;
+    background-image: url("Me.jpeg");
+    max-width:100%;
+    max-height:100%;
     color: #FFFFFF;
     text-align: center;
     line-height: 30px;
 }
+.flexWork {
+    min-height: 100vh;
+    margin: 0 auto;
+    font: 12pt Comic Sans MS;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.haikuImage {
+    background-image: url("Haiku.png");
+    width: 200px;
+    height: 125px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    line-height: 30px;
+}
+.haikuInfo {
+    width: 300px;
+    height: 120px;
+    background: #990012;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 12px;
+    /*text-align: center;*/
+}
+
 
 .aboutMe {
     grid-row: 1;
@@ -66,9 +98,4 @@ body {
     /*margin: 5px;*/
     /*text-align: center;*/
     /*line-height: 100px;*/
-}
-
-footer {
-    grid-row: 3;
-    grid-column: 1 / span 3;
 }
